@@ -1,0 +1,50 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+
+  & .nav {
+    height: 50px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    & button{
+      height: 50px; 
+      width: 120px;
+      border-radius: 10px;
+      background-color: white;
+   
+    }
+    & button:hover{
+      background-color: rgb(26, 88, 168);
+      color: white;
+    }
+  }
+}
+
+.container-calendario{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  & .calendario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    }
+}
+
+.container-pages{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
