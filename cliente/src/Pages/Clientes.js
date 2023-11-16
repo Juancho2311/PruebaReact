@@ -18,6 +18,7 @@ import {
 export const Clientes = () => {
   // Base de datos
   const [datas, setdatas] = useState([]);
+  // calendario
   const [selectedDateInicio, setSelectedDateInicio] = useState("");
   const [selectedDateFinal, setSelectedDateFinal] = useState("");
 
@@ -53,7 +54,7 @@ export const Clientes = () => {
       );
     }
     if (selectedDateInicio !== "") {
-      console.log(selectedDateInicio);
+      
       const fechaOriginal = new Date(selectedDateInicio);
 
       const fechaFormateada = format(fechaOriginal, "yyyy/MM/dd");
